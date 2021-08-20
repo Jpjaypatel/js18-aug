@@ -16,23 +16,24 @@ console.log(array);
 const array1=[1,2,36,40];
 
 //4. Default Function Parameters:
-function multiply(a, b = 1) {
+function multiply(a, b = 5) {
         return a * b;
    }
 
-    console. log(multiply(25, 2));
+    console. log(multiply(25, 5));
     console. log(multiply(5));
 
 //5. Rest Parameter:
 
 function sum(...inputs){
-    console.log(...inputs);    
-    let total = 0;    
+    console.log("Rest Parameter");
+    console.log(...inputs);  
+     let total = 0;    
     for(let i of inputs){
         total +=  i;
     }
     console.log(total);
-}
+ }
 sum(1,2,3,4,5,6,7);
 
 //6. Spread Operator:
@@ -47,23 +48,37 @@ console.log(sum.apply(null, numbers));
 
 //7. Object literal syntax extensions :
 
-    let uname = 'Jay',
-     udivision = 'First';
+    let Name = 'Computer',
+        Status = 'On';
 
 
-     let user = {
+     let Machine = {
 
-        uname,
-        udivision
+        Name,
+        Status
      };
-     console.log(user.uname);
-     console.log(user.udivision);
+     console.log(Name);
+     console.log(Status);
+
+
+    //abcd
+
+
+    let prefix = 'machine';
+    let machine = {
+    [prefix + ' name']: 'server',
+    [prefix + ' hours']: 10000
+};
+
+console.log(machine['server']); // server
+console.log(machine['10000']); // 10000
 
 //global object
-// var a = 10;
-// var b = 30;
-// console.log(a);
-// console.log(b); 
+var a = 10;
+var b = 30;
+console.log(a);
+console.log(b); 
+
 
 
 // let keyword
