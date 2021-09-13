@@ -21,18 +21,18 @@
 
 
 // // type of operator:--
-//     var myName = "Jay Patel";
-//     console.log(typeof(myName));
-//     console.log(myName);
+    // var myName = "Jay Patel";
+    // console.log(typeof(myName));
+    // console.log(myName);
 
 //     var myAge = 22;
 //     console.log(typeof(myAge));
 //     console.log(myAge);
 
 
-//     var iAmPatel = true;
-//     console.log(iAmPatel);
-//     console.log(typeof(iAmPatel));
+    // var iAmPatel = true;
+    // console.log(iAmPatel);
+    // console.log(typeof(iAmPatel));
 
 
 //     // DataType Practise :---
@@ -55,9 +55,9 @@
 
 //         console.log("Null Vs Undefined :------------------------------------");
 
-//     var iAmPhotographer = null;
-//     console.log(iAmPhotographer);
-//     console.log(typeof(iAmPhotographer));
+    // var iAmPhotographer = null;
+    // console.log(iAmPhotographer);
+    // console.log(typeof(iAmPhotographer));
     
     
 //     console.log("---------------------------------------------------------- ");
@@ -68,19 +68,19 @@
 
 
 
-//     var myPhoneNumber = 9876543210;
-//     var myName = "Patel";
+    // var myPhoneNumber = 9876543210;
+    // var myName = "Patel";
 
-//     console.log(myPhoneNumber);
-//     console.log(myName);
+    // console.log(myPhoneNumber);
+    // console.log(myName);
 
-//     console.log("To check the number is number or not :---------");
-//     console.log(isNaN(myPhoneNumber));
-//     console.log(isNaN(myName));
+    // console.log("To check the number is number or not :---------");
+    // console.log(isNaN(myPhoneNumber));
+    // console.log(isNaN(myName));
 
-//     if(isNaN(myName)){
-//             console.log("Please enter valid Phone number");
-//     }
+    // if(isNaN(myName)){
+    //         console.log("Please enter valid Phone number");
+    // }
 
 //     // Epressions and Operators:------------
 
@@ -103,18 +103,18 @@
     
 //     console.log("Increment Operator");
     
-//     console.log("Postfix:-------");
-//     var num = 15;
-//     var newNum = num++ +5;
-//     console.log(num);
-//     console.log(newNum);
+    // console.log("Postfix:-------");
+    // var num = 15;
+    // var newNum = num++ +5;
+    // console.log(num);
+    // console.log(newNum);
 
 //         console.log("Prefix :------");
 
-//         var num = 15;
-//         var newNum = ++num + 5;
-//         console.log(num);
-//         console.log(newNum); 
+        // var num = 15;
+        // var newNum = ++num + 5;
+        // console.log(num);
+        // console.log(newNum); 
 
     
 //     // Decrement Operator:------- 
@@ -492,7 +492,7 @@
     // console.log(sum());
 
     
-    // const sum1 = () => `the sum of twp numbers is ${(a=6) + (b=6)}`;
+    // const sum1 = () => `the sum of two numbers is ${(a=6) + (b=6)}`;
     // console.log(sum1());
 
 
@@ -559,9 +559,9 @@
 
     // const animals = ['pigs', 'goats', 'sheep'];
 
-    // // const count = animals.push('chicken');
-    // // console.log(animals);
-    // // console.log(count);
+    // const count = animals.push('chicken');
+    // console.log(animals);
+    // console.log(count);
 
     // animals.push('chicken', 'cats', 'cow');
     // // console.log(push);
@@ -591,12 +591,12 @@
     // Shift:---------------------------
 
 
-    const plants = ['broccoli', 'cauliflower', 'kale', 'tomato', 'cabbage'];
+    // const plants = ['broccoli', 'cauliflower', 'kale', 'tomato', 'cabbage'];
 
-    console.log(plants);
-    console.log(plants.shift());
-    console.log(plants.shift());
-    console.log(plants);
+    // console.log(plants);
+    // console.log(plants.shift());
+    // console.log(plants.shift());
+    // console.log(plants);
 
 
     // Adds and /or removes elements from an array.
@@ -606,9 +606,474 @@
     // 3: update march to March (update)?
     // 4: Delete June from an array?
 
-    const months = ['Jan', 'march', 'April', 'June', 'July'];
+    // const months = ['Jan', 'march', 'April', 'June', 'July'];
 
-    // sol1:
+    // // sol1 & sol2:
 
-    const newMonths = months.splice(5, 0, "Dec");
-    console.log(months);
+    // const newMonths = months.splice(1, 1, 'March');
+    // // months.push("Dec");
+
+    // console.log(months);
+
+    // sol3:-------------------------------------
+
+        // const Months =['Jan', 'march', 'April', 'June', 'July'];
+
+        // const indexOfMonth = Months.indexOf('June');
+
+        // if(indexOfMonth != -1){
+        //     const updateMonth = Months.splice(indexOfMonth, 1, 'june');
+        //     console.log(Months);
+        // } else{
+        //         console.log('No such data found');
+        // }
+
+
+        // sol4:-----
+
+        //  const months1 = ['Jan', 'march', 'April', 'June', 'July'];
+        //  const indexOfMonth = months1.indexOf('April');;
+        //  if(indexOfMonth != -1){
+        //     const updateMonth = months1.splice(indexOfMonth, 2);
+        //     console.log(months1);
+        //     console.log(updateMonth);
+        //  }else{
+        //         console.log('No such data found');
+        //  }
+
+
+        //  Map method:------------------------
+
+        // console.log("Map Method :-------------------------");
+         
+
+        // const array1 = [1, 4, 9, 16, 25];
+        // //  num > 9
+        //  let newArr = array1.map((curElem,index,arr) => {
+        //     return curElem > 9;
+        //  });
+        //  console.log(array1);
+        //  console.log(newArr);
+
+        // let newArr = array1.map((curElm, index, arr) => {
+        //     return `Index no = ${index} and the value is ${curElm} belong to ${arr}`
+
+        // })
+        // console.log(newArr); 
+
+
+        //1 : Find the square root of each element in an arraay??
+        // 2 : Multiply each element by 2 and return ony those elements which are greater than 10?
+
+        // Task 1 :----
+
+        // let arr = [25, 36, 49, 64, 81];
+        
+        // let arrSqr = arr.map((curElem) => {
+        //         return Math.sqrt(curElem);
+        // })
+        // console.log(arrSqr);
+        
+
+        // Task 2:---------------
+
+        // let arr1 = [2, 3, 4, 6, 8];
+        // let arr2 = arr1.map((curElm) => curElm * 2).filter((curElem) => curElem > 10);
+        // console.log(arr2); 
+
+
+        // Reduce Method :---------
+
+        // let arr = [2, 3, 4, 6, 8];
+        // let arr2 = arr.map((curElm) => curElm *2).filter ((curElem) => curElem >10).reduce((accumulator, curElem) => {
+        //     return accumulator += curElem;
+        // });
+        // console.log(arr2);
+
+        // let arr = [5,6,2];
+
+        // let sum = arr.reduce((accumulator, curElem, index, arr) => {
+        //     debugger;
+        //     return accumulator *= curElem;
+        // })
+        // console.log(sum);
+
+        //Flatten an arrau:--------------
+
+        // const arr = [
+        //         ['Zone_1', 'Zone_2'],
+        //         ['Zone_3', 'Zone_4'],
+        //         ['Zone_5', 'Zone_6'],
+        //         ['Zone_7', 'Zone_8']
+        // ];
+
+        // let flatArr = arr.reduce((accum, currVal) => {
+        //     return accum.concat(currVal)
+        // });
+        // console.log(flatArr);
+
+
+        // Strings in JavaScript:---------------------------------
+
+        // let myName = "Jay Patel";
+        // let myChannelName = 'Jay Patel';
+
+        // // let ytName = new String("Patel")
+        // let ytName = 'Patel';
+
+        // console.log(myName);
+        // console.log(ytName);
+
+    // Length of String :-----
+
+    // let myName = "Jay Patel";
+    // console.log(myName.length);
+
+
+    // Escape Character :-------------------------------------
+
+    // let anySentence = "We are the so-called \"Vikings\" from the north.";
+    // console.log(anySentence);
+
+    // // If you dont want to mess, simply use the alternate quotes
+
+    // let anysentence = 'We are the so-called \'Vikings\' from the north.';
+    // console.log(anysentence);
+
+    
+
+    // Finding a string in string:------------------
+    //  const myBioData = 'I am Jay Patel';
+    //  console.log(myBioData.indexOf("Patel"));
+
+    //  const myBioData1 = 'I am the thapa Technical';
+    //  console.log(myBioData1.indexOf("t", 6));
+
+
+    // // Sting.prototype.lastIndexof(searchValue[, fromIndex])
+    
+    // const mybiodata = 'I am the thapa Technical';
+    // console.log(mybiodata.lastIndexOf("t", 6));
+
+
+    // Searching for a String in a String :-----------------------
+    
+        // String.prototype.search(regexp)
+
+            // const myBioData = 'I am the Thapa Technical';
+
+            // let sData = myBioData.search("Thapa");
+            // console.log(sData);
+
+    // Extracting String Parts:------------
+
+    var txt = "a,b,c d,e";
+    // console.log(txt.split(","));
+    // console.log(txt.split(" "));
+    // console.log(txt.split("|"));
+
+
+
+
+
+    // console.log("Slice Method:-----------------------");
+
+    // var str = "Apple, Bananaa, Kiwi, Mango";
+    // // let res = str.slice(0,5);
+    //     let res = str.slice(7, -2);
+    // console.log(res);
+
+
+    // Task :------------
+
+    // Display only 200 character of a string like the one used in Twitter ?
+
+        // let myTweets = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.";
+        // let myActualTweet = myTweets.slice(0,280);
+        // console.log(myActualTweet);
+        // console.log(myActualTweet.length);
+
+    
+    // substring() Method:------------------------------------
+    // In this method can't give negative value(-2....):-
+
+    // console.log("substring method");
+
+    // var str = "Apple, Bananaa, Kiwi";
+    // let res = str.substring(0,6);
+    // console.log(res);
+
+
+    // Substr() Method:---------------------------------
+     // In this method can't give negative value(-2....):-
+    // console.log("Substr Method:------------------");
+
+    // var str = "Apple, Bananaa, Kiwi";
+    // // let res = str.substr(0,5);
+    // let res = str.substr(-4);
+    // console.log(res);
+
+
+
+    // Replacing String Content():----------------------------------------
+    // String.prototype.replace(searchFor, replaceWith)
+
+    // let myBioData = `I am jay Patel jay`;
+
+    // let replaceData = myBioData.replace('Jay', 'JAY');
+    // console.log(replaceData);
+    // console.log(myBioData);
+
+
+        // String Characters :--------------------
+
+        // There are a# methods for extracting string characters:
+            // charAt(Position)
+            // charCodeArt(Position)
+            // Property access [ ]
+        // console.log("String Character :----------------------------------------");
+
+        //   let str = "HELLO WORLD";
+
+        //   console.log(str.charAt(9));
+
+
+        // // CharCodeAt() Method :-----------------------
+
+        // console.log("CharCodeAt() method :--------------------------");
+
+        //  let str = "HELLO WORLD";
+
+        //  console.log(str.charCodeAt(4));
+
+
+        // Return the Unicode of the last character in a string 
+        
+        // let str = "HELLO WORLD";
+        // let lastChar = str.length -1;
+        // console.log(str.charCodeAt(lastChar));
+
+        // Property Access -------------------------
+
+        // var str = "HELLO WORLD";
+        // console.log(str[1])
+
+        // let myName = "jay pAtel";
+        // console.log(myName.toUpperCase());
+        // console.log(myName.toLowerCase());
+
+
+        // Concat() method:---------------------------------
+
+        // let fName = "jay"
+        // let lName = "patel"
+
+        // console.log(fName + lName);
+        // console.log(`${fName} ${lName}`);
+        // console.log(fName.concat(lName));
+        // console.log(fName.concat(" ",lName));
+
+
+        // String.trim() method:-------------------------------
+            // The trim() method removes whitespace from both side of String.
+        // console.log("String.trim Method :-------------------");
+ 
+        //     var str = "          Hello World!!                          "
+        //     console.log(str.trim());
+
+
+        // Split() method :--------------------------------------
+
+        // var txt = "a,b,c d,e";
+        // console.log(txt.split(","));
+        // console.log(txt.split(" "));
+        // console.log(txt.split("|"));
+
+
+
+        // Date and time object in JavaScript:--------------------------
+
+        // Date Methods (get and set)
+        // Time Methods (get and set)
+
+        // Date Objects :---------------------------
+        
+        // let currDate = new Date();
+        // console.log(currDate); var txt = "a,b,c d,e";
+        // console.log(txt.split(","));
+        // console.log(txt.split(" "));
+        // console.log(txt.split("|"));
+
+
+
+     
+    //MiniSecond Count:------------------------------
+        // console.log(Date.now());
+
+
+        // Date with Year and Month:---
+
+        // var d = new Date(2021, 8, 13, 2, 22, 30, 0);
+        // console.log(d.toLocaleString());
+
+
+        // Date string:----------------------------------------
+
+        // var d = new Date("October 13, 2021 11:13:00");
+        // console.log(d.toLocaleString());
+
+
+        // Date Method()
+
+        // const curDate = new Date();
+
+        // console.log(curDate.toLocaleString());
+        // console.log(curDate.getFullYear());
+        // console.log(curDate.getMonth());
+        // console.log(curDate.getDate());
+        // console.log(curDate.getDay());
+
+
+
+
+    // Set the indivisual Date :------------------------------------------
+
+
+    // console.log("set the date indivisual:-------------------");
+    var txt = "a,b,c d,e";
+    // console.log(txt.split(","));
+    // console.log(txt.split(" "));
+    // console.log(txt.split("|"));
+
+
+
+    // console.log(curDate.setFullYear(2022));
+    // console.log(curDate.setFullYear(2022, 10, 5));
+    // console.log(curDate.setMonth(10));
+    // console.log(curDate.setDate(5));
+    // console.log(curDate.toLocaleString());
+
+
+
+
+    // Time method:--------------------------------------
+
+
+
+    // const curTime = new Date();
+
+    // console.log(curTime.getTime());
+    // console.log(curTime.getHours());
+
+    // console.log(curTime.getMinutes());
+    // console.log(curTime.getSeconds());
+    // console.log(curTime.getMilliseconds());
+
+
+
+    // Set TIme method:-------------------------------
+
+
+    // let curTime = new Date();
+    // // console.log(curTime.setTime());
+
+    // console.log(curTime.setHours(5));
+    // console.log(curTime.setMinutes(5));
+    // console.log(curTime.setSeconds(5));
+    // console.log(curTime.setMilliseconds(5));
+
+
+
+    // Math Object:-----------------------------------------------------------------------
+
+
+    // console.log(Math.PI);
+
+
+    // Math.round() :---------------------------------------------------------------------
+
+    // let num = 10.2565;
+    // console.log(Math.round(num));
+
+
+    // Math.pow():--------------
+
+    // console.log(Math.pow(2,3));
+    // console.log(2**3);
+
+
+
+    // Math.sqrt():------------------------------------------------------------------------
+
+
+    // console.log(Math.sqrt(25));
+    // console.log(Math.sqrt(81));
+    // console.log(Math.sqrt(66));
+
+
+
+
+    // Math.abs():--------------------------------------------------------------------------
+    // Returns the absolute (positive) value of x
+
+
+    // console.log(Math.abs(-55));
+    // console.log(Math.abs(-55.5));
+    // console.log(Math.abs(-955));
+    // console.log(Math.abs(4-6));
+
+
+
+
+    // Mail.ceil():-------------------------------------------------------------------------
+    // ceil is doing the numer plus in point value. ( 44.1= 45)
+
+
+    // console.log(Math.ceil(4.51));
+    // console.log(Math.round(4.51));
+    // console.log(Math.ceil(99.01));
+    // console.log(Math.round(99.1));
+
+
+
+    // Math.floor() :-----------------------------------------------------------------------
+    // Math.floor(x) returns the value of x rounded down to its nearest int.---> (4.7= 4)
+
+        // console.log(Math.floor(4.7)); 
+        // console.log(Math.floor(99.9));
+        // console.log(Math.floor(15.3));
+
+
+    // Math.min() :--------------------------------------------------------------------------
+    // Math.min() can be used to find the lowest value in a list of argument 
+
+    // console.log(Math.min(0, 150, 30, 20, -8, -200));
+
+    // Math.max() ;--------------------------------------------------------------------------
+    // Math.max() can be used to find the highest value in a list of argument
+
+    // console.log(Math.max(-20, 1, 8, 40, 10, 20));
+
+
+
+    // Math.random() :----------------------------------------------------------------------
+    // Math.random() returns a random number between 0 to 10
+
+    // console.log(Math.random()*10);
+
+    // console.log(Math.floor(Math.random()*10));
+
+
+    
+    // Math.trunc():------------------------------------------------------------------------
+    // The trunc() method returns the integer part of number
+
+
+    // console.log(Math.trunc(4.6));
+    // console.log(Math.trunc(-99.1));
+
+
+
+
+
+     
