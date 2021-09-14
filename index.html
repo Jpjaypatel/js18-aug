@@ -8,10 +8,12 @@
 </head>
 <body>
     <h1>Hello World...This is JavaScript Tutorial</h1>
-    <p> Click the button to display a date after changing !</p>
+    
+
+    <!-- <p> Click the button to display a date after changing !</p>
     <button onclick = "myFunction()"> Try it</button>
         <p id = "demo"> </p>
-        <p id = "time"> </p>
+        <p id = "time"> </p> -->
         <script >
             // function myFunction(){
             //         var t = new Date();
@@ -21,18 +23,19 @@
                 // var t = new Date().toLocaleTimeString();
                 // document.getElementById("time").innerHTML =t;
         
-                var d = new Date().toLocaleDateString();
-                document.getElementById("time").innerHTML =d;
+        //         var d = new Date().toLocaleDateString();
+        //         document.getElementById("time").innerHTML =d;
 
                 
 
-                (function(){
-                    setInterval(()=>{
-                            var d = new Date().toLocaleTimeString();
-                            document.getElementById("demo").innerHTML = d;
-           }, 1000)
-            })();
+        //         (function(){
+        //             setInterval(()=>{
+        //                     var d = new Date().toLocaleTimeString();
+        //                     document.getElementById("demo").innerHTML = d;
+        //    }, 1000)
+        //     })();
         </script>
-    <script src="/basic.js"></script>
+    <script src="/app.js"></script>
+
 </body>
 </html>
